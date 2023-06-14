@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     element: <Login/>,
   },
   {
-    path: "/auroraorganic/contacts",
+    path: "/contacts/:contactId",
     element: <Contact />,
   },
   {

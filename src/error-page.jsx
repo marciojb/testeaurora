@@ -1,6 +1,7 @@
 import { useRouteError } from "react-router-dom";
-import imagemLogo from "../src/assets/imgs/404.jpg"
-
+// var React = require('react');
+// var ReactDOM = require('react-dom');
+// var Carousel = require('react-responsive-carousel').Carousel;
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -9,10 +10,37 @@ export default function ErrorPage() {
   return (
     <div id="error-page" className=" flex h-screen bg-aurora-fundoErro justify-center items-center">
       <div className=" "  >
-        
-        <img src={imagemLogo} alt=""  className="flex "/>  
+        <h1 className="flex pb-1 justify-center items-center text-2xl text-aurora-fontErroRosa font-bold">NOT FOUND</h1>
+        {/* <img src={imagemLogo} alt=""  className="flex h-96 "/>  */}
       </div>
-      
+      {/* <div>
+      <Carousel showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
+                <div>
+                    <img src="assets/1.jpeg" />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src="assets/2.jpeg" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="assets/3.jpeg" />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <img src="assets/4.jpeg" />
+                    <p className="legend">Legend 4</p>
+                </div>
+                <div>
+                    <img src="assets/5.jpeg" />
+                    <p className="legend">Legend 5</p>
+                </div>
+                <div>
+                    <img src="assets/6.jpeg" />
+                    <p className="legend">Legend 6</p>
+                </div>
+            </Carousel>
+      </div> */}
     </div>
   );
 }

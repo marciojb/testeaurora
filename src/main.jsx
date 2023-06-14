@@ -3,6 +3,7 @@ import './index.css'
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
+  BrowserRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -68,6 +69,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <BrowserRouter basename='auroraorganic' >
     <RouterProvider router={router} />
+    </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,5 +1,5 @@
-import bannerImagem1 from '../../assets/imgs/Banner2skin.jpg';
-import bannerImagem2 from '../../assets/imgs/banner1promo.jpg';
+import bannerImagem1 from '../assets/imgs/Banner2skin.jpg';
+import bannerImagem2 from '../assets/imgs/banner1promo.jpg';
 import {
     Carousel,
     initTE,
